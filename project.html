@@ -24,13 +24,16 @@
 </header>
 
 <article>
-    <p>
-Dog with a blog    </p>
+    <h1>
+Blog Posts!    </h1>
 
 
     
 
-<img class="third-image" src="doglaptop.png" alt="a picture of dog with a blog" />
+
+
+
+
 <img src="" alt="" />
 <img src="" alt="" />
 <img src="" alt="" />
@@ -38,7 +41,7 @@ Dog with a blog    </p>
 </article>
 
 <footer>
-    <p> THANKS FOR READING DOG WITH A BLOG</p>
+    <p> THANKS FOR READING DOG WITH A BLOG!</p>
     <br/> <br/>
 </footer>
 
@@ -49,15 +52,29 @@ Dog with a blog    </p>
 
 
 <style>
+    .grid-layout{
+        display: grid;
+        width: 500px;
+        height: 500px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 
-    footer{
-        background-color:plum;
+h1{
+    color:#B92128;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-color: #FEEDD5;
+}
+    footer p{
+        background-color:#7C3E24;
         text-align:center;
-        padding-top: 2%;
-        font-size: 20px;
+        font-size: 15px;
+        color: white;
 
     }
-.first-image, .second-image, .third-image{
+.first-image, .second-image{
     width: 50%;
     height: 100%;
     margin-left:25%;
@@ -66,22 +83,23 @@ Dog with a blog    </p>
 
 
     header{
-        background-color: lightpink;
         font-size: 36px;
         text-align: center;
         padding: 20px;
     }
 
     nav a{
-        margin-left:10px;
-        margin-right:10px;
-        color:darkred;
+        margin-left:15px;
+        margin-right:15px;
+        color: #41585e;
+        font-size: 26px;
 
 
     }
 
+
     article{
-        background-color: mistyrose;
+       
         font-size: 1.6rem;
         width: 900px;
         margin-left: auto;
