@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <!--Link to your CSS stylesheet  -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -24,25 +29,44 @@
 </header>
 
 <article>
-    <h1>
-Blog Posts!    </h1>
-
-
-    
+    <h1 class="title"> Blog Posts! </h1>
 
 
 
 
 
-<img src="" alt="" />
-<img src="" alt="" />
-<img src="" alt="" />
+
+
+    <!-- <div>  -->
+    <img src="mailman.png" class=image1 alt="" />
+    <p class="para1">I caught the mailman again this morning...
+        I don’t understand how he’s gotten the rest of the family tricked, but he wont trick me. I know he’s planning
+        something, im just not yet sure what it is. I will soon. I’ll keep you all updated. </p>
+    <!-- </div> -->
+
+    <!-- <div>  -->
+    <img src="cut.png" class=image2 alt="" />
+    <p class="para2">Tyler got a haircut today that he swears is going to ruin his life. I don’t really understand what
+        the problem
+        is... I get my hair cut at the groomers all the time, and the golden haired poodle next door still likes me.
+    </p>
+    <!-- </div> -->
+
+    <!-- <div>  -->
+    <img src="family.png" class=image3 alt="" />
+    <p class="para3">My new adopted family has just discovered that I can talk!! I didn’t mean to let it slip, but now
+        Tyler, Avery,
+        and Chloe all know, yet they agreed to keep it a secret from our owners Ellen and Bennett. I don’t think they’d believe
+        them anyway... they can barely believe it themselves.
+
+        I hope they don’t find out, and that I can stay. I love my new family </p>
+    <!-- </div> -->
 
 </article>
 
 <footer>
     <p> THANKS FOR READING DOG WITH A BLOG!</p>
-    <br/> <br/>
+    <br /> <br />
 </footer>
 
 
@@ -52,64 +76,117 @@ Blog Posts!    </h1>
 
 
 <style>
-    .grid-layout{
-        display: grid;
-        width: 500px;
-        height: 500px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    nav {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
     }
 
-h1{
-    color:#B92128;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-body{
-    background-color: #FEEDD5;
-}
-    footer p{
-        background-color:#7C3E24;
-        text-align:center;
+
+
+    h1 {
+        color: #B92128;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    body {
+        background-color: #FEEDD5;
+    }
+
+    footer p {
+        background-color: #7C3E24;
+        text-align: center;
         font-size: 15px;
         color: white;
 
     }
-.first-image, .second-image{
-    width: 50%;
-    height: 100%;
-    margin-left:25%;
-    margin-right:25%;
-}
+
+    .first-image,
+    .second-image {
+        width: 50%;
+        height: 100%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
 
 
-    header{
+    header {
         font-size: 36px;
         text-align: center;
         padding: 20px;
     }
 
-    nav a{
-        margin-left:15px;
-        margin-right:15px;
+    nav a {
+        margin-left: 15px;
+        margin-right: 15px;
         color: #41585e;
         font-size: 26px;
 
 
     }
 
+    .title {
+        grid-area: title;
+    }
 
-    article{
-       
+    .image1 {
+        grid-area: image1;
+    }
+
+    .para1 {
+        grid-area: para1;
+    }
+
+    .image2 {
+        grid-area: image2;
+    }
+
+    .para2 {
+        grid-area: para2;
+    }
+
+    .image3 {
+        grid-area: image3;
+    }
+
+    .para3 {
+        grid-area: para3;
+    }
+
+    article {
+
         font-size: 1.6rem;
-        width: 900px;
+        width: 92vw;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
+
+
+        display: grid;
+        grid-template-columns: 2.5fr 1fr;
+        grid-template-rows: 1fr 4fr 4fr 4fr;
+        grid-template-areas:
+            "title title"
+            "image1 para1"
+            "image2 para2"
+            "image3 para3";
     }
 
-    p{
-        color:rgb(44, 41, 2);
-        
+    article img {
+        width: 80%;
+        margin: auto;
+    }
+
+    article p {
+        color: rgb(44, 41, 2);
+        background-color: #c29581;
+        height: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding:30px;
+          font-family: "Fuzzy Bubbles", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
     }
 </style>
 
